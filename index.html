@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<title>Frontend Mentor | Interactive rating component</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="preview active">
+				<div class="preview__wrapper">
+					<img class="preview__wrapper_icon" src="./images/icon-star.svg" alt="icon" />
+				</div>
+				<h1 class="preview__title">How did we do?</h1>
+				<p class="preview__descr">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering</p>
+				<form class="preview__form">
+					<div class="preview__form_wrapper">
+						<div class="rating">
+							<input type="radio" name="rating" id="rating-1" value="1" />
+							<label for="rating-1">1</label>
+						</div>
+						<div class="rating">
+							<input type="radio" name="rating" id="rating-2" value="2" />
+							<label for="rating-2">2</label>
+						</div>
+						<div class="rating">
+							<input type="radio" name="rating" id="rating-3" value="3" />
+							<label for="rating-3">3</label>
+						</div>
+						<div class="rating">
+							<input type="radio" name="rating" id="rating-4" value="4" />
+							<label for="rating-4">4</label>
+						</div>
+						<div class="rating">
+							<input type="radio" name="rating" id="rating-5" value="5" />
+							<label for="rating-5">5</label>
+						</div>
+					</div>
+					<input class="preview__form_btn" type="submit" value="submit" />
+				</form>
+			</div>
+			<div class="state">
+				<img class="state__img" src="images/illustration-thank-you.svg" alt="image" />
+				<div class="state__selected"></div>
+				<h2 class="state__title">Thank you!</h2>
+				<p class="state__descr">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+			</div>
+		</div>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>
